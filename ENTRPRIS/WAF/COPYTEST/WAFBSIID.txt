@@ -32,3 +32,18 @@ FDCS  *                                  SERVICE                       *
            05  WAFBSIID-STATUS-CODE         PIC X(02)  VALUE SPACES.            
                88  WAFBSIID-STATUS-OK                  VALUE '00'.              
                88  WAFBSIID-STATUS-NOT-OK              VALUE '10'.              
+      *  BSI FRAMEWORKS GENERIC CALL ROTINUE                           *        
+      *  PARAMETER LIST OF WAFBSIIS PROGRAM                            *        
+      ******************************************************************        
+      *    COPY: WAFBSIID                                              *        
+      *  AUTHOR: TAG SERVICES SUPPORT                                  *        
+      ******************************************************************        
+      *  MAINTENANCE LOG:                                              *        
+      *  DATE     USER-ID                DESCRIPTION                   *        
+      *  ----     -------                -----------                   *        
+      * 01/01/14  CSSD SERVICE SUPPORT-  INITIAL VERSION               *        
+      ******************************************************************        
+       01  WAFBSIID-PARM-LIST.                                                  
+                                                                                
+           05  WAFBSIID-PGM-NAME            PIC X(08)  VALUE 'WAFBSIIS'.        
+           05  WAFBSIID-VERSION             PIC S9(03) VALUE +0.                
